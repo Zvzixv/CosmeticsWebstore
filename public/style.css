@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f2e7;
+}
+
+header {
+    background-color: #e2c79f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #b6851c;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #666;
+} 
+
+section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section2 {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1, h2 {
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    color: rgb(153, 19, 19);
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px; /* Zmniejszono odstęp między kafelkami */
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    width: 280px; /* Ustawiona szerokość kafelka */
+    height: 450px;
+    display: inline-block; /* Kafelki będą wyświetlane obok siebie */
+    box-sizing: border-box;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+.product-card:hover {
+    cursor: pointer;
+}
+
+.flex-container {
+    justify-content: flex-start;
+    align-items: stretch; /* Ustawienie równego rozciągnięcia kafelków */
+}
+  
+.button {
+    display: inline-block;
+    background-color: #e2c79f; /* Kolor tła */
+    color: rgb(0, 0, 0); /* Kolor tekstu */
+    padding: 10px 20px; /* Wielkość wypełnienia */
+    font-size: 16px; /* Rozmiar czcionki */
+    border: none; /* Brak obramowania */
+    border-radius: 5px; /* Zaokrąglenie krawędzi */
+    cursor: pointer; /* Kursor w postaci strzałki na hover */
+    transition: background-color 0.3s; /* Efekt przejścia dla zmiany koloru tła */
+    margin: 10px;
+}
+  
+  .button:hover {
+    background-color: #b6851c; /* Kolor tła na hover */
+  }
+
+  .boughtproduct-card {
+    flex: 0 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px; /* Zmniejszono odstęp między kafelkami */
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    width: 280px; /* Ustawiona szerokość kafelka */
+    height: 300px;
+    display: inline-block; /* Kafelki będą wyświetlane obok siebie */
+    box-sizing: border-box;
+}
+
+.boughtproduct-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+.boughtproduct-card:hover {
+    cursor: pointer;
+}
+
+.boughtproduct-card.selected {
+    background-color: rgb(75, 44, 30); /* Kolor tła dla wybranych produktów */
+  }
+
+  .close-button {
+    margin: 10px; /* Dodaj margines */
+  }

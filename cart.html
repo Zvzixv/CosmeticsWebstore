@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep kosmetyczny</title>
+    <link rel="stylesheet" type="text/css" href="./public/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sklep z naturalnymi kosmetykami</h1>
+    </header>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="index.html#produkty">Produkty</a>
+        <a href="cart.html">Koszyk</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+    <section>
+        <h2>Koszyk</h2>
+        <div id="cartContainer" class=".container"></div>
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js"></script>
+        <script type="module" src="./functions/main.js" defer></script>
+    </section>
+    <section>
+        <button id="clearButton" class="button">Wyczyść koszyk</button>
+        <button id="buyButton" class="button">Finalizacja</button>
+    </section>
+</body>
+</html>

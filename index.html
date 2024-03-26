@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep kosmetyczny</title>
+    <link rel="stylesheet" type="text/css" href="./public/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sklep z naturalnymi kosmetykami</h1>
+    </header>
+    <nav>
+        <a href="./index.html">Strona Główna</a>
+        <a href="./#produkty">Produkty</a>
+        <a href="./cart.html">Koszyk</a>
+        <a href="./contact.html">Kontakt</a>
+    </nav>
+    <section>
+        <h2>Zapraszamy do zakupów</h2>
+        <p>Zaopatrz się w kosmetyki bezpieczne dla Twojej skóry, bez narażania ją na szkodliwe substancje.</p>
+    </section>
+
+    <section2>
+        <h3>  <font size="+2">Promocja</font></h3>
+        <p><b>Tylko w tym miesiącu, dodatkowe 20% do nieprzecenionych produktów oraz darmowa dostawa dla zamówień powyżej 100 zł.</b></p>
+    </section2>
+
+    <section id ="produkty">
+    <div id="productListContainer" class=".container"></div>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js"></script>
+    <script type="module" src="./functions/main.js" defer></script>
+    </section>
+</body>
+</html>
+ 
